@@ -1,0 +1,79 @@
+.topbar {
+  position: fixed;
+  left: 200px; }
+
+.title-top {
+  background-color: magenta;
+  position: fixed;
+  height: 64px;
+  top: 0;
+  width: 100%; }
+  .title-top > p {
+    margin-left: 20px;
+    font-size: 40px; }
+
+.icon {
+  background-color: #7a00ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 128px; }
+
+nav.navbar-top {
+  background-color: magenta;
+  position: fixed;
+  top: 0;
+  margin-top: 64px;
+  height: 64px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 3px; }
+  nav.navbar-top > ul {
+    height: 100%; }
+    nav.navbar-top > ul > li {
+      height: 100%;
+      background-color: magenta; }
+      nav.navbar-top > ul > li > a {
+        padding: 22px 10px;
+        font-size: 18pt;
+        color: white; }
+        nav.navbar-top > ul > li > a:hover {
+          background-color: #7a00ff; }
+
+.dropdown {
+  background-color: magenta; }
+  .dropdown > ul {
+    width: 100%;
+    padding: 0; }
+    .dropdown > ul > li {
+      padding: 5px 15px;
+      list-style: none; }
+      .dropdown > ul > li:hover {
+        background-color: #7a00ff; }
+      .dropdown > ul > li > a {
+        color: white;
+        white-space: nowrap;
+        font-size: 9pt; }
+
+.sidebar-left {
+  position: fixed;
+  width: 200px;
+  height: calc(100% - 128px);
+  top: 128px;
+  background-color: magenta; }
+  .sidebar-left .links {
+    position: absolute;
+    bottom: 0; }
+    .sidebar-left .links ul li {
+      list-style: none; }
+      .sidebar-left .links ul li a {
+        color: white;
+        font-size: 9pt; }
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin-top: 128px;
+  margin-left: 200px; }
+
+/*# sourceMappingURL=site.css.map */

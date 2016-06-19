@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MumsyWebsite", "MumsyWebsite\MumsyWebsite.csproj", "{CAB625A3-9921-4772-A237-5FF047B15D98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MumsyWebsite.Tests", "MumsyWebsite.Tests\MumsyWebsite.Tests.csproj", "{BEE9C016-3CD3-472E-BBF3-2587AD37396D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAB625A3-9921-4772-A237-5FF047B15D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB625A3-9921-4772-A237-5FF047B15D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB625A3-9921-4772-A237-5FF047B15D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB625A3-9921-4772-A237-5FF047B15D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE9C016-3CD3-472E-BBF3-2587AD37396D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE9C016-3CD3-472E-BBF3-2587AD37396D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE9C016-3CD3-472E-BBF3-2587AD37396D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE9C016-3CD3-472E-BBF3-2587AD37396D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

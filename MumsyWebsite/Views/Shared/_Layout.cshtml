@@ -1,0 +1,54 @@
+﻿@using MumsyWebsite.Helpers;
+@{
+	var baseTitle = "Mumsy Website";
+	var title = ViewBag.Title == null
+		? baseTitle
+		: baseTitle + " - " + ViewBag.Title;
+	var aboutActionLinkList = Html.Raw(Html.ActionLinkList("About"));
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title</title>
+	@Styles.Render("~/Content/css")
+	<meta name="description" content="Cross stitch kits and guides" />
+</head>
+<body>
+	<div class="icon">
+
+	</div>
+	<div class="topbar">
+		<div class="title-top">
+			<p>Mumsy Website</p>
+		</div>
+		<nav class="navbar-top">
+			<ul class="nav navbar-nav pull-left">
+				<li>@Html.ActionLink("Home", "Index", "Home")</li>
+				<li>@Html.ActionLink("Shop", "Index", "Shop")</li>
+				<li>
+					@Html.ActionLink("About Us", "Index", "About")
+					<div class="dropdown" style="display: none">
+						@aboutActionLinkList
+					</div>
+				</li>
+				<li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+				<li>@Html.ActionLink("Guides", "Guides", "Home")</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="sidebar-left">
+		<div class="links">
+			@aboutActionLinkList
+		</div>
+	</div>
+	<div class="container">
+		@RenderBody()
+	</div>
+	@Scripts.Render("~/bundles/libs")
+	@Scripts.Render("~/bundles/site")
+	@RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿@model MumsyWebsite.Models.Admin.LoginModel
+@using (Html.BeginForm("Login", "Admin")){ 
+	@Html.AntiForgeryToken()
+	<div class="row">
+		<div class="col-xs-offset-4 col-xs-4">
+			@Html.LabelFor(x => x.Password)
+			@Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-offset-4 col-xs-4">
+			<button type="submit" class="btn btn-primary">Login</button>
+		</div>
+	</div>
+	
+}
