@@ -1,0 +1,37 @@
+﻿@model MumsyWebsite.Models.Shop.Item
+@{
+	ViewBag.Title = Model.Name;
+	var type = Model.Type.ToString();
+	var sizeString = type + " size approx. "
+		+ Model.Dimensions.HeightCentimeters + "cm x "
+		+ Model.Dimensions.WidthCentimeters + "cm or "
+		+ Model.Dimensions.HeightInches + "\" x "
+		+ Model.Dimensions.WidthInches + "\" " + (Model.Dimensions.WidthCentimeters == Model.Dimensions.HeightCentimeters ? "square" : "");
+	var halfStitches = Model.HasHalfStitches ? "Has half stitches" : "No half stitches";
+}
+
+<div class="shop-item-header">
+	<h4>@Model.Name</h4>
+	<p>£@Model.Price</p>
+</div>
+@foreach (var image in Model.Images) {
+	<img src="data:image/png;base64,@image" />
+}
+<p>@Model.Description</p>
+<div class="shop-item-details">
+	<h4>List of Details</h4>
+	<p>Included in this kit:</p>
+	<ul>
+		@foreach (var content in Model.Contents) {
+			<li>@content.Text</li>
+		}
+	</ul>
+	<h4>Other information</h4>
+	<p>Design copyright of Claire's Designs</p>
+	<p>@sizeString</p>
+	<p>@halfStitches</p>
+	@foreach(var info in Model.ExtraInformation) {
+		<p>@info</p>
+	}
+</div>
+
